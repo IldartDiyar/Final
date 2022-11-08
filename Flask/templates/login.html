@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="{{url_for('static', filename='style.css')}}" rel=" stylesheet" />
+    <title></title>
+</head>
+
+<body>
+    <form action="{{ url_for('login') }}" method="post">
+        <h1>Login</h1>
+        <div class="group">
+            <label>Login</label>
+            <input type="text" name="login" id="login">
+        </div>
+        <div class="group">
+            <label>password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="group">
+            <center><button>Submit</button></center>
+            <p>{{msg}}</p>
+            <div>Don`t have account? <a href="{{ url_for('registration') }}">Sign in</a></div>
+        </div>
+    </form>
+</body>
+
+</html>

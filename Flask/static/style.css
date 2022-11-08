@@ -1,0 +1,45 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif;
+    background: orange;
+    margin: 0;
+}
+
+h1 {
+    cursor: help;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 3px solid palegreen;
+}
+
+form {
+    margin: 0 auto;
+    background-color: aqua;
+    width: 450px;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px burlywood;
+}
+
+.group {
+    margin: 10px;
+    padding: 5px;
+}
+
+label {
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+input {
+    margin-top: 10px;
+    height: 40px;
+    width: 400px;
+    border-radius: 20/20px;
+    border: none;
+    font-size: 18px;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
