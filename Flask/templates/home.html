@@ -11,13 +11,13 @@
     <div class="container">
         <h1>Shopping List</h1>
 
-        <form id="js-shopping-list-form">
+        <div id="js-shopping-list-form">
             <label for="shopping-list-entry">Add an item</label>
-            <form method="POST" action="{{ url_for('insert') }}">
+            <form method="post" action="{{ url_for('insert') }}">
                 <input type="text" name="item" id="shopping-list-entry" placeholder="e.g., broccoli">
                 <input type="submit" value="Add">
             </form>
-        </form>
+        </div>
 
         <ul class="shopping-list">
             {% for food in foods %}

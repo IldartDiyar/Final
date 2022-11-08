@@ -37,6 +37,6 @@ def delete_api(food, username):
 
 
 def insert_apio(username, food):
-    result = requests.put(
+    result = requests.post(
         'http://127.0.0.1:4000/NewItem/?username={0}&new_food={1}'.format(username, food))
     return result.json()
